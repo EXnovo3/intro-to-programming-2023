@@ -1,0 +1,49 @@
+.bmain {
+
+  font-family:monospace;
+  font-size: 18px;
+  background: rgb(27, 27, 83);
+  background-image: url('for_background.png');
+  background-repeat: no-repeat;
+  background-size:400px;
+  background-attachment:fixed;
+  background-position:900px;
+  color: white;
+  
+}
+   .navbar {
+  
+  display:block;
+  height: 20px;
+  line-height: 15px;
+  width: 60%;
+  position:fixed;
+ 
+  
+}
+
+.navbar a {
+  float: left;
+  padding: 15px;
+  color:white;
+  font-size: 15px;
+  font-stretch: expanded;
+  font-weight: bold;
+  text-decoration: none;
+  width: 24%;
+  padding: 16px;
+  margin: 20px;
+  text-align:center;
+  border-style:solid;
+  border-spacing: 10px;
+  border-width: 2px;
+  border-radius: 30px;
+}
+
+.navbar a:hover {
+  background-color:rgba(74, 32, 165, 0.521)4;
+  color: rgb(201, 124, 136);
+}
+
+
+
