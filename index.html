@@ -7,67 +7,82 @@
     <title>My portfolio website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+  
+</head>
+  
+<body>
+  <div class="container">
+  
+  <div class="container-navbar">
+    <div class="logo">OV.</div>
+    <nav>
+        
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Connect</a>
+        
+      </nav>
+      
+  </div>
+
+<div class="container-about">
+ <section id="about">
     
-
-  </head>
-  
-<body class="bmain">
-  
-  
-  <div class="navbar">
-    <a class="active" class="bar1" href="#">About</a>  
-    <a class="bar2" href="#">Experience</a> 
-    <a class="bar3" href="#">Contact</a>
-  </div><br>
-
- <br><section><br>
-    <h2>About</h2>
-    <p>I am an aspiring front-end web developer eager to use my skills and creativity<br> to develop web applications that have a positive impact. 
+    <p>I am an aspiring <em>front-end web developer</em> eager to use my skills and creativity<br> to develop web applications that have a <span class="positive">positive impact.</span> 
     </p>
+    <div class="connect">
+      <a href="mailto:XXXXX@gmail.com" target="_blank"><img src="icons/envelope-at-fill.svg"></a>
+      <a href="https://github.com/EXnovo3" target="_blank"><img scr="icons/github.svg"></a>
+      <a href="#" target="_blank"><img src="icons/linkedin.svg"></a>
+    </div>
   </section>
+</div>
 
- <br> <section><br>
-    <h2>Experience</h2>
+
+
+<div class="container-projects">
+ <section id="projects"><br>
+    
   <ul>
       <li>Project 1</li>
       <li>Project 2</li>
       <li>Project 3</li>
   </ul>
   </section>
-
-  <br><section id="skills"><br>
-    <h2>Skills</h2>
+</div>
+<div class="container-skills">
+<section id="skills">
+    
     <ul></ul>
   </section>
-  
- <br><section><br>
-    <h2>Connect</h2>
-    <a href="mailto:XXXXX@gmail.com" target="_blank">Send Email</a>
-    <p><a href="https://github.com/EXnovo3" target="_blank">Find me on GitHub</a></p>
-  </section>
+ </div>
 
-<section>
-  <h2>Leave a message</h2>
+
+  <div id="contact">
   <form name="leave_message">
-    <label>Name</label><br>
-   <input type="text" name="usersName" required><br>
+    <p class="leave">Leave a message</p>
+    <label>Name</label>
+   <input type="text" name="usersName" required placeholder="required"><br>
    <label>Email Address</label><br>
-   <input type="email" name="usersEmail" required><br>
+   <input type="email" name="usersEmail" required placeholder="required"><br>
    <label>Message</label><br>
-   <textarea name="usersMessage" required></textarea><br>
+   <textarea name="usersMessage" required placeholder="required"></textarea><br>
    <button type="submit">Submit</button>
 
   </form>
-</section>
+  
 <section id="messages">
-<h2>Messages</h2>
- <ul>
- </ul>
-</section>
-  
-<footer></footer>
-  
-<script src="js/index.js"></script>
+    
+    <ul>
+   </ul>
+  </section>
+</div>
+  <footer></footer>
+  <script src="js/index.js"></script>
+
+
+
 
 </body>
 </html>
