@@ -50,7 +50,27 @@ newMessage.appendChild(editButton);
 this.reset();
 })
 
+let githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/EXnovo3/repos');
+githubRequest.send();
+githubRequest.onload = function() {
 
+let repositories = JSON.parse(this.response); 
+   console.log(repositories);
+   projectSection = document.getElementById('projects');
+projectList = projectSection.querySelector('ul');
+for (i=0; i < repositories.length; i++) {
+    let project = document.createElement('li');
+    let projectLink = document.createElement('a');
+    projectLink.href = repositories[i].html_url;
+    projectLink.innerText = repositories[i].name;
+    projectLink.target = "_blank";
+    
+    project.appendChild(projectLink);
+    projectList.appendChild(project);
+   }
+
+};
 
 
 
