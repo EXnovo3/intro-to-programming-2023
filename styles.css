@@ -18,10 +18,13 @@ padding: 0;
 
 
 body {
-  font-family: Lato,sans-serif;
-  color: #012736;
-  background-image: radial-gradient(circle at 10% 20%, rgba(243, 246, 250, 0.46) 5%, rgba(244, 215, 196, 0.28) 90%);
   
+  
+  background: linear-gradient(120deg, #dcecf8 0%, transparent 40%, #f8e6fa 100%);
+  background-color: #f5f3f3;
+  background-size: 0.4px 0.6px;
+  font-family: Lato, sans-serif;
+}
 .container {
   
   height: auto;
@@ -29,7 +32,7 @@ body {
 
   
   
-}
+
  ul {
 
   list-style-type: none;
@@ -113,7 +116,7 @@ font-size: xx-large;
 
 
 .positive {
-  font-family: Permanent Marker;
+  font-family: Lato,sans-serif;
   color:rgb(61, 61, 204);
   text-decoration-line: underline;
   line-height: 2rem;
@@ -134,7 +137,6 @@ height: 200px;
 .container-projects li {
   padding: 30px;
   margin: 10px;
-  text-transform: uppercase;
   text-decoration: none;
   color: rgb(35, 35, 236);
   border: 2px solid white;
@@ -149,13 +151,19 @@ height: 200px;
   transition: transform 0.2s;
 }
 
+.container-skills {
+
+  margin-top: 200px;
+  margin-bottom: 300px;
+
+}
+
 .container-skills ul {
   display: flex;
   flex-wrap:wrap;
   flex-direction: row;
   justify-content:center;
   align-items: center;
-  margin-top: 400px;
   height: 200px;
 }
 
@@ -166,7 +174,7 @@ height: 200px;
   font-family: Lato;
   text-align: center;
   color: rgb(35, 35, 236);
-  font-size: xx-large;
+  font-size:large;
   border: 2px solid white;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   border-radius: 1%;
@@ -175,7 +183,7 @@ height: 200px;
 
 
   .leave {
-  font-family: Permanent Marker;
+  font-family: Lato, sans-serif;
   color:rgb(61, 61, 204);
   text-decoration-line: underline;
   line-height: 2rem;
@@ -256,7 +264,6 @@ height: 200px;
  flex-wrap: wrap;
  flex-direction: column;
  justify-content:center;
- margin-top: 200px;
  margin: 0 auto;
  align-items: center;
 }
@@ -265,6 +272,20 @@ height: 200px;
  margin-top: 100px;
  font-size: 24px;
  color: rgb(63, 60, 60);
+}
+
+#messages button {
+  margin-right: 15px;
+  background-color: white;
+  color:#A02D03;
+  border-color: #A02D03;
+  padding: 5px;
+  width:70px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor:pointer;
+  font-size:10px;
+
 }
 
 footer {

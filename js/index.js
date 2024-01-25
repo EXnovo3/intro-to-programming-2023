@@ -36,41 +36,41 @@ let entry = removeButton.parentNode;
 entry.remove();
 });
 newMessage.appendChild(removeButton);
-messageList.appendChild(newMessage);
 
 const editButton = document.createElement('button');
 editButton.innerText = 'Edit';
 editButton.type = 'button';
 editButton.addEventListener('click', function() {
-    newMessage.contentEditable = 'true';
-  
-});
+newMessage.querySelector('span').contentEditable = 'true';
+
+ });
 newMessage.appendChild(editButton);
-
+messageList.appendChild(newMessage);
 this.reset();
+});
+
+fetch('https://api.github.com/users/EXnovo3/repos', {mode: 'cors'})
+.then(function(response) {
+  return response.json();
 })
+.then(function(repositories) {
 
-let githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/EXnovo3/repos');
-githubRequest.send();
-githubRequest.onload = function() {
-
-let repositories = JSON.parse(this.response); 
-   console.log(repositories);
-   projectSection = document.getElementById('projects');
-projectList = projectSection.querySelector('ul');
+console.log(repositories);
+let projectSection = document.getElementById('projects');
+let projectList = projectSection.querySelector('ul');
 for (i=0; i < repositories.length; i++) {
-    let project = document.createElement('li');
-    let projectLink = document.createElement('a');
-    projectLink.href = repositories[i].html_url;
-    projectLink.innerText = repositories[i].name;
-    projectLink.target = "_blank";
-    
-    project.appendChild(projectLink);
-    projectList.appendChild(project);
-   }
+let project = document.createElement('li');
+let projectLink = document.createElement('a');
+projectLink.href = repositories[i].html_url;
+projectLink.innerText = repositories[i].name;
+projectLink.target = "_blank";
 
-};
+project.appendChild(projectLink);
+
+projectList.appendChild(project);
+ } 
+
+});
 
 
 
