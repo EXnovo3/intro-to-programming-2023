@@ -10,19 +10,12 @@ padding: 0;
 }
 
 
-
-
-
-
-
-
-
 body {
   
   
   background: linear-gradient(120deg, #dcecf8 0%, transparent 40%, #f8e6fa 100%);
   background-color: #f5f3f3;
-  background-size: 0.4px 0.6px;
+  background-size: 2px 7px;
   font-family: Lato, sans-serif;
 }
 .container {
@@ -91,7 +84,6 @@ body {
   color:rgb(61, 61, 204);
   font-family: Permanent Marker;
   font-size: 4em;
-  box-shadow: 5px 5px 10px rgba(122, 121, 121, 0.3);
   transition: transform 0.2s;
   transform: translate(-15%, -15%); 
 }
@@ -111,16 +103,21 @@ box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 border-left: none;
 border-right: none;
 border-radius: 1%;
-font-size: xx-large;
+font-size: x-large;
+}
+
+.oxana {
+  font-family: Permanent Marker;
+  color:rgb(61, 61, 204);
+  font-size: 40px;
 }
 
 
 .positive {
   font-family: Lato,sans-serif;
-  color:rgb(61, 61, 204);
-  text-decoration-line: underline;
-  line-height: 2rem;
-  text-decoration-color: #A02D03;
+  color:#A02D03;
+  font-weight: bolder;
+  
 }
 
 .container-projects ul {
@@ -142,7 +139,7 @@ height: 200px;
   border: 2px solid white;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   border-radius: 1%;
-  font-size: xx-large;
+  font-size:x-large;
   
 }
 
@@ -173,8 +170,7 @@ height: 200px;
   text-decoration: none;
   font-family: Lato;
   text-align: center;
-  color: rgb(35, 35, 236);
-  font-size:large;
+  font-size:x-large;
   border: 2px solid white;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   border-radius: 1%;
@@ -299,6 +295,30 @@ footer {
  color: rgb(63, 60, 60);
  font-size: larger;
 
+}
+
+img.icon {
+  
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.icons {
+  
+    position: fixed;
+    top: 60%;
+    left: 1%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+  width:50px;
+  height: 50px;
+  margin-bottom: 8px;
+  
 }
 
 @media (max-width:900px) {
